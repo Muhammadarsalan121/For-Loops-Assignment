@@ -187,18 +187,3 @@ for (i = 1; i < aryLargest.length; i++) {
 
 
 
-document.write(`10. Write a program to identify the smallest number in the given 
-array.
-A = [24, 53, 78, 91, 12]`)
-
-// Answer:
-
-let arysmall = [24, 53, 78, 91, 12];
-let smallNumber = arysmall[0];
-
-for (let i = 1; i < arysmall.length; i++) {
-   if (arysmall[i] < smallNumber) {
-      smallNumber = arysmall[i]
-   }
-}
-document.write(`<p>Array Items:[24, 53, 78, 91, 12]</p> The Smallest Number in array is ${smallNumber}`)
