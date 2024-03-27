@@ -187,3 +187,111 @@ for (i = 1; i < aryLargest.length; i++) {
 
 
 
+// <<<<<<<<<<< Question No 10 >>>>>>>>>>>>
+document.write(`<p>10. Write a program to identify the smallest number in the given 
+array.
+A = [24, 53, 78, 91, 12].</p>`)
+
+// Answer:
+
+let arysmall = [24, 53, 78, 91, 12];
+let smallNumber = arysmall[0];
+
+for (let i = 1; i < arysmall.length; i++){
+   if (arysmall[i] < smallNumber) {
+      smallNumber = arysmall[i]
+   }
+}
+document.write(`<p>Array Items: [24, 53, 78, 91, 12] </p> The Smallest Number in array is ${smallNumber}`);
+
+
+
+// <<<<<<<<<<< Question No 11 >>>>>>>>>>>>
+document.write(`<p> 11. Write a program to identify the largest & the smallest
+number in the given array.
+A = [24, 53, 78, 91, 12] </p>`)
+
+// Answer:
+
+const arrylargsmall = [24, 53, 78, 91, 12];
+let questionNo11 = document.querySelector(`#question11`);
+let questionpart211 = document.querySelector(`#questionpart211`)
+let bothsmalllarge = arrylargsmall[0];
+
+for (let i = 1; i < arrylargsmall.length; i++) {
+   if (arrylargsmall[i] > bothsmalllarge) {
+      bothsmalllarge = arrylargsmall[i]
+   }
+}
+questionNo11.innerHTML = `<p>The Smallest Number Is  ${bothsmalllarge} </p>`;
+
+for (let i = 1; i < arrylargsmall.length; i++) {
+   if (arrylargsmall[i] < bothsmalllarge) {
+      bothsmalllarge = arrylargsmall[i]
+   }
+}
+questionpart211.innerHTML = `<p>The Smallest Number Is ${bothsmalllarge}</p>  `;
+
+
+
+// <<<<<<<<<<< Question No 12 >>>>>>>>>>>>
+// 12. Write a program to print multiples of 5 ranging 1 to 100
+
+// Answer:
+
+for (i = 5; i <= 100; i += 5) {
+   document.write(`<span>${i}, </span>`)
+}
+
+
+
+// <<<<<<<<<<< Question No 13 >>>>>>>>>>>>
+document.write(`<p>13. You have given the following arrays:
+var students = ["Ali", "Sami", "Taha", "Inam"];
+var scores = [58, 73, 89, 90];
+FOR	Loops |	JAVASCRIPT
+Page	9 of	12
+Write a program to generate the following HTML table in your 
+browser using JS.</p>`)
+
+// Answer :
+let students = ["Ali", "Sami", "Taha", "Inam"];
+let scores = [58, 73, 89, 90];
+for (let i = 0; i < students.length; i++) {
+   
+
+}
+
+
+
+
+
+// <<<<<<<<<<< Question No 16 >>>>>>>>>>>>
+document.write(`<p>16. Write a program to repeatedly print the value of the variable 
+num which is input by user. Value should be decreasing by 0.5 
+each time, as long as x Value remains positive.</p>`)
+
+// Answer:
+
+let num = +prompt(`Enter a Number`)
+for (i = num; i >= 0; i -= 0.5) {
+   document.write(`<span>${i} </span>`)
+}
+
+
+
+// <<<<<<<<<<< Question No 17 >>>>>>>>>>>>
+document.write(`<p>17. The even/odd reporter
+Write a for loop that will iterate from 0 to 20. For each 
+iteration, it will check if the current number is even or odd, and 
+report that to the screen (e.g. "2 is even").</p>`)
+
+// Answer:
+for (let i = 0; i <= 19; i++) {
+   if (i % 2 === 0) {
+      document.write(`<div>${i}  is odd </div>`);
+   }else{
+      document.write(`<div>${i}  is even  </div>`)
+   }
+
+}
